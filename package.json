@@ -1,0 +1,21 @@
+{
+  "name": "kamran_notes",
+  "version": "1.0.0",
+  "description": "This project contains all subjects notes.",
+  "main": "index.js",
+  "scripts": {
+    "start":"npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "init"
+  },
+  "keywords": [
+    "Notes"
+  ],
+  "author": "Kamran",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.0.24"
+  }
+}
