@@ -23,7 +23,7 @@
           </svg>
           <span class="font-semibold text-xl tracking-tight">KA Notes</span>
         </div>
-        <div class="block lg:hidden">
+        <div class="block lg:hidden toggle-navbar">
           <button
             class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white"
           >
@@ -37,7 +37,9 @@
             </svg>
           </button>
         </div>
-        <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+        <div
+          class="w-full flex-grow lg:flex lg:items-center lg:w-auto overflow-hidden lg:h-auto h-0 menu-bar lg:scale-100 scale-0 transition-all duration-400"
+        >
           <div class="text-sm lg:flex-grow">
             <a
               href="#responsive-header"
@@ -68,5 +70,45 @@
         </div>
       </nav>
     </header>
+
+    <section class="container lg:w-11/12 w-full px-2 mx-auto">
+      <h3 class="text-2xl font-semibold my-8 md:text-left text-center">
+        English notes
+      </h3>
+      <div
+        class="files md:grid lg:grid-cols-3 md:grid-cols-2 flex flex-col md:space-y-0 space-y-14 items-center lg:h-80"
+      >
+        <div class="file relative h-72 lg:h-5/6">
+          <iframe
+            src="pdf_files/1st Year English important short question book 1.pdf"
+            class="h-full"
+          >
+          </iframe>
+          <p class="text-center md:text-left text-lg my-4">
+            English short questions
+          </p>
+          <a
+            href="pdf_files/1st Year English important short question book 1.pdf"
+          >
+            <img
+              src="icons/full screen.svg"
+              alt="full_screen"
+              class="full_screen z-50 w-8 block absolute left-5 bottom-4"
+          /></a>
+        </div>
+        <div class="file relative h-72 lg:h-5/6">
+          <iframe src="pdf_files/English stories .pdf" class="h-full"> </iframe>
+          <p class="text-center md:text-left text-lg my-4">English stories</p>
+          <a href="pdf_files/English stories .pdf">
+            <img
+              src="icons/full screen.svg"
+              alt="full_screen"
+              class="full_screen z-50 w-8 block absolute left-5 bottom-4"
+          /></a>
+        </div>
+      </div>
+    </section>
+    <div class="h-[1px] bg-slate-600 my-8 opacity-30"></div>
   </body>
+  <script src="javascript/control.js"></script>
 </html>
