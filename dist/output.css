@@ -561,10 +561,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: grid;
 }
 
-.h-\[800px\] {
-  height: 800px;
-}
-
 .h-8 {
   height: 2rem;
 }
