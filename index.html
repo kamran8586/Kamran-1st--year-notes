@@ -1,105 +1,157 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="dist/output.css" rel="stylesheet" />
-  </head>
-  <body class="dark:text-white dark:bg-slate-900">
-    <header>
-      <!-- Create tailwind navbar -->
-      <nav class="flex items-center justify-between flex-wrap bg-teal-500 p-6">
-        <div class="flex items-center flex-shrink-0 text-white mr-6">
-          <svg
-            class="fill-current h-8 w-8 mr-2"
-            width="54"
-            height="54"
-            viewBox="0 0 54 54"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z"
-            />
-          </svg>
-          <span class="font-semibold text-xl tracking-tight">KA Notes</span>
-        </div>
-        <div class="block lg:hidden toggle-navbar">
-          <button
-            class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white"
-          >
-            <svg
-              class="fill-current h-3 w-3"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <title>Menu</title>
-              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-            </svg>
-          </button>
-        </div>
-        <div
-          class="w-full flex-grow lg:flex lg:items-center lg:w-auto overflow-hidden lg:h-auto h-0 menu-bar lg:scale-100 scale-0 transition-all duration-400"
-        >
-          <div class="text-sm lg:flex-grow">
-            <a
-              href="#responsive-header"
-              class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-4"
-            >
-              Home
-            </a>
-            <a
-              href="#responsive-header"
-              class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"
-            >
-              Examples
-            </a>
-            <a
-              href="#responsive-header"
-              class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white"
-            >
-              Blog
-            </a>
-          </div>
-          <div>
-            <a
-              href="#"
-              class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0"
-              >Download</a
-            >
-          </div>
-        </div>
-      </nav>
-    </header>
 
-    <section class="container lg:w-11/12 w-full px-2 mx-auto">
-      <h3 class="text-2xl font-semibold my-8 md:text-left text-center">
-        English notes
-      </h3>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="dist/output.css" rel="stylesheet" />
+</head>
+
+<body class="dark:text-white dark:bg-slate-900 h-[800px]">
+  <header class="sticky top-0 z-50">
+    <!-- Create tailwind navbar -->
+    <nav class="flex items-center justify-between flex-wrap bg-teal-500 p-6">
+      <div class="flex items-center flex-shrink-0 text-white mr-6">
+        <svg class="fill-current h-8 w-8 mr-2" width="54" height="54" viewBox="0 0 54 54"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z" />
+        </svg>
+        <a href="/index.html" class="font-semibold text-xl tracking-tight">KA Notes</a>
+      </div>
+      <div class="block lg:hidden toggle-navbar">
+        <button
+          class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
+          <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <title>Menu</title>
+            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+          </svg>
+        </button>
+      </div>
       <div
-        class="files md:grid lg:grid-cols-3 md:grid-cols-2 gap-9 flex flex-col md:space-y-0 space-y-14 items-center lg:h-80"
-      >
-        <div class="file relative h-72 lg:h-5/6">
-          <p class="text-center md:text-left text-lg my-4">
-            English short questions
-          </p>
-          <img src="images/short_questions.png" alt="" />
-          <a
-            href="pdf_files/1st Year English important short question book 1.pdf"
-            class="bg-teal-400 hover:bg-teal-500 py-2 px-4 rounded-lg mr-4 block w-fit mt-4"
-            >Download</a
-          >
+        class="w-full flex-grow lg:flex lg:items-center lg:w-auto overflow-hidden lg:h-auto h-0 menu-bar lg:scale-100 scale-0 transition-all duration-400">
+        <div class="text-sm lg:flex-grow">
+          <a href="#English" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-4">
+            English
+          </a>
+          <a href="#Math" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
+            Math
+          </a>
+          <a href="#Pairing" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white">
+            Pairing
+          </a>
         </div>
-        <div class="file relative h-72 lg:h-5/6">
-          <p class="text-center md:text-left text-lg my-4">English stories</p>
-          <img src="images/stories.png" alt="" class="border-none" />
-          <a
-            href="pdf_files/English stories .pdf"
-            class="bg-teal-400 hover:bg-teal-500 py-2 px-4 rounded-lg mr-4 block w-fit mt-4"
-            >Download</a
-          >
+        <div>
+          <a href="#"
+            class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0">Download</a>
         </div>
       </div>
-    </section>
-  </body>
-  <script src="javascript/control.js"></script>
+    </nav>
+  </header>
+
+  <section class="container lg:w-11/12 w-full px-2 mx-auto">
+    <!--- English Start -->
+    <div class="English " id="English">
+
+      <h3 class="text-2xl font-semibold my-8 lg:text-left text-center">
+        English notes
+      </h3>
+      <div class="cards grid lg:grid-cols-3 grid-cols-1 place-items-center gap-6">
+        <!-- Card Start -->
+        <div class="max-w-sm rounded overflow-hidden shadow-lg lg:w-auto w-full">
+          <img class="w-full" src="images/stories.png" alt="Mountain">
+          <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2">Stories</div>
+            <p class="text-gray-700 text-base dark:text-gray-100">
+              1st year English stories notes.
+            </p>
+          </div>
+          <div class="px-6 pt-4 pb-2">
+            <a href="pdf_files/English stories .pdf" target="_blank"
+              class="inline-block bg-teal-400 rounded-md px-3 py-2 text-sm font-semibold text-white mr-2 mb-2">Download</a>
+          </div>
+        </div> <!-- Card End -->
+        <!-- Card Start -->
+        <div class="max-w-sm rounded overflow-hidden shadow-lg">
+          <img class="w-full" src="images/short_questions.png" alt="Mountain">
+          <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2">Questions</div>
+            <p class="text-gray-700 text-base dark:text-gray-100">
+              1st year English Questions notes.
+            </p>
+          </div>
+          <div class="px-6 pt-4 pb-2">
+            <a href="pdf_files/1st Year English important short question book 1.pdf" target="_blank"
+              class="inline-block bg-teal-400 rounded-md px-3 py-2 text-sm font-semibold text-white mr-2 mb-2">Download</a>
+          </div>
+        </div> <!-- Card End -->
+      </div>
+    </div> <!-- English End -->
+
+    <!-- Math Start -->
+    <div class="Math" id="Math">
+      <h3 class="text-2xl font-semibold my-8 lg:text-left text-center">
+        Math Notes
+      </h3>
+      <div class="cards grid lg:grid-cols-3 grid-cols-1 place-items-center gap-6">
+        <!-- Card Start -->
+        <div class="max-w-sm rounded overflow-hidden shadow-lg lg:w-auto w-full">
+          <img class="w-full" src="images/Math MCQ'S.png" alt="Mountain">
+          <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2 ">Math MCQ'S</div>
+            <p class="text-gray-700 text-base dark:text-gray-100">
+              1st year Math MCQ'S solved .
+            </p>
+          </div>
+          <div class="px-6 pt-4 pb-2">
+            <a href="pdf_files/1st  year math  mcqs (solved).pdf" target="_blank"
+              class="inline-block bg-teal-400 rounded-md px-3 py-2 text-sm font-semibold text-white mr-2 mb-2">Download</a>
+          </div>
+        </div> <!-- Card End -->
+        <!-- Card Start -->
+        <div class="max-w-sm rounded overflow-hidden shadow-lg">
+          <img class="w-full" src="images/Math Test.png" alt="Mountain">
+          <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2">Test</div>
+            <p class="text-gray-700 text-base dark:text-gray-100">
+              1st year Math Test.
+            </p>
+          </div>
+          <div class="px-6 pt-4 pb-2">
+            <a href="pdf_files/Mathematics Part 1 (FULL BOOK) Exercise Wise Tests.pdf" target="_blank"
+              class="inline-block bg-teal-400 rounded-md px-3 py-2 text-sm font-semibold text-white mr-2 mb-2">Download</a>
+          </div>
+        </div> <!-- Card End -->
+      </div>
+    </div> <!-- Math End -->
+
+    <!-- Pairing Start -->
+    <div class="Pairing" id="Pairing">
+      <h3 class="text-2xl font-semibold my-8 lg:text-left text-center">
+        Pairing Scheme
+      </h3>
+      <div class="cards grid lg:grid-cols-3 grid-cols-1 place-items-center gap-6">
+        <!-- Card Start -->
+        <div class="max-w-sm rounded overflow-hidden shadow-lg lg:w-auto w-full">
+          <img class="w-full" src="images/pairing.png" alt="Mountain">
+          <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2">Pairing Scheme</div>
+            <p class="text-gray-700 text-base dark:text-gray-100">
+              1st year All books pairing scheme.
+            </p>
+          </div>
+          <div class="px-6 pt-4 pb-2">
+            <a href="pdf_files/Assessment Scheme 1st Year 2022.pdf" target="_blank"
+              class="inline-block bg-teal-400 rounded-md px-3 py-2 text-sm font-semibold text-white mr-2 mb-2">Download</a>
+          </div>
+        </div> <!-- Card End -->
+
+      </div>
+    </div> <!-- Pairing End -->
+
+  </section>
+
+</body>
+<script src="javascript/control.js"></script>
+
 </html>

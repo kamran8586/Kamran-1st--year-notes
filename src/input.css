@@ -4,4 +4,7 @@
 
 * {
   transition: all 0.3s ease;
+  /* color: #e63746; */
+  color: inherit;
+  scroll-behavior: smooth;
 }
